@@ -1,15 +1,15 @@
-import RPi.GPIO as GPIO
-import time
+import RPi.GPIO as GPIO #Set name
+import time # for timing functions
 
 # Setup
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(17, GPIO.OUT)
+GPIO.setmode(GPIO.BCM) # Set what method we are going to use to manipulate GPIO
+GPIO.setup(17, GPIO.OUT) # Set BCM pin 17 as output
 
 # Loop
 while True:
-	GPIO.output(17, True)
+	GPIO.output(17, True) #Set BCM 17 to High
 	print "LED ON"
-	time.sleep(1)
-	GPIO.output(17, False)
+	time.sleep(1) #Delay for 1 second
+	GPIO.output(17, False) #Set BCM 17 to Low
 	print "LED OFF" 
-        time.sleep(1)
+        time.sleep(1) #Delay for 1 second
