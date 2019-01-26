@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO #Set name
 import time # for timing functions
 
 # Setup
-GPIO.setmode(GPIO.BCM) # Set what method we are going to use to manipulate GPIO
+GPIO.setmode(GPIO.BCM) # Set what method we are going to use to manipulate GPIO: BCM or BOARD
 GPIO.setup(17, GPIO.OUT) # Set BCM pin 17 as output
 
 # Loop
